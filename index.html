@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mycash - Best Way to Make Online Payments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900;700&display=swap');
+    @-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes zoomIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		opacity: 1;
+	}
+}
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.area {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+
+}
+
+.circles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 96%;
+	overflow: hidden;
+}
+
+.circles li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 25s linear infinite;
+	bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+	left: 25%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+	left: 10%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 2s;
+	animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+	left: 70%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+	left: 40%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+	left: 65%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+	left: 75%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+	left: 35%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 15s;
+	animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+	left: 20%;
+	width: 15px;
+	height: 15px;
+	animation-delay: 2s;
+	animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+	left: 85%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 11s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+		border-radius: 0;
+	}
+
+	100% {
+		transform: translateY(-1000px) rotate(720deg);
+		opacity: 0;
+		border-radius: 50%;
+	}
+}
+
+    .rotate {
+      transform: rotate(90deg);
+    }
+
+    .rotate-20 {
+      position: absolute;
+      transform: rotate(-90deg);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Poppins';
+    }
+
+    .intersection-item {
+      transition: 4s ease-out;
+      transform: scale(0.97);
+      /* opacity: 0; */
+    }
+
+    .opacity-100 {
+      /* opacity: 1; */
+      transition: 2s ease-out;
+      transform: scale(1);
+
+    }
+    .marketSection{
+      clip-path: polygon(0 10%, 100% 1%, 100% 92%, 0 100%);
+
+    }
+  </style>
+</head>
+<body class=" text-white">
+  <!-- Header -->
+  <section class="bg-[#070127] relative h-[120vh] mt-[-10vh] pt-[10%] area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+<nav class=" backdrop-blur-md bg-transparent   fixed w-full z-20 top-0 start-0 p-4 px-12">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+  <a href="/" class=" logo flex items-center rtl:space-x-reverse">
+      <img src="/Assets/Icons/logo.png" class="h-12 " alt="Logo">
+      <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white ml-[-13px]">Mycash Wallet</span>
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="navList flex flex-col p-4 mt-medium d:p-0 mt-4 fon md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
+      <li>
+        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+    <div class=" title flex mt-[10vh] gap-[20%] justify-center items-center">
+      <h1 class="text-6xl text-white font-[900] w-[50%] intersection-item">
+        <span class=" text-blue-500">Paiements Sans Contact Sécurisés au Burundi:</span> Payez en un clin d'œil avec notre application de paiement sans contact.
+      </h1>
+      <div class=" ss flex">
+        <img src="sla.png" class="absolute rotate-[-30deg] right-[40vh] intersection-item" alt="sla">
+        <img src="app.png" class="rotate intersection-item " alt="app">
+      </div>
+    </div>
+  </section>
+  <!-- Main Content -->
+  <main class="container mx-auto py-12 text-[#070127]">
+    <section class=" flex px-20">
+      <div class="w-[50%]">
+        <h1 class="text-4xl font-bold mb-4 intersection-item">Gérez tous vos paiements au même endroit</h1>
+        <p class="text-lg mb-6 intersection-item">
+          Notre plateforme révolutionnaire vous offre la possibilité de centraliser tous vos paiements sans contact en un seul endroit pratique et sécurisé. Fini le temps où vous deviez jongler entre différentes applications et cartes pour effectuer vos transactions. Avec notre solution intuitive, vous pouvez désormais gérer tous vos paiements en magasin, en ligne et même entre amis, en un clin d'œil. Simplifiez votre vie financière et profitez d'une expérience de paiement sans contact fluide et sans tracas, où que vous soyez. Découvrez comment notre service simplifie et sécurise vos transactions dès aujourd'hui !
+        </p>
+      </div>
+      <div class="flex justify-center space-x-4 mb-8">
+        <img src="undraw_apps_bqvc.svg" class="w-[100vh] h-[50vh] intersection-item" alt="apps">
+      </div>
+    </section>
+
+    <section class=" mt-12 px-20">
+      <h2 class="text-2xl font-bold mb-4 intersection-item">Quels sont les services que nous proposons?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+              <img class="rounded-t-lg" src="/Assets/The-Answer.png" alt="" />
+          </a>
+          <div class="p-5">
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Un Wallet App.</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Découvrez notre application de portefeuille électronique, votre compagnon sécurisé pour des paiements rapides. Centralisez cartes de paiement, programmes de fidélité et coupons dans une seule app. Faites vos achats en magasin en un geste.
+              </p>
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Read more
+                   <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+              </a>
+          </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+              <img class="rounded-t-lg" src="/Assets/payment-manager-.png" alt="" />
+          </a>
+          <div class="p-5">
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Manager App.</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Découvrez notre application de gestion marchande, centralisant la gestion de votre argent. Suivez vos transactions, gérez vos ventes et recevez les paiements sans tracas. Avec notre solution tout-en-un, fini les complications de jongler entre différentes plateformes. Contrôlez votre activité commerciale, comprenez vos flux de trésorerie et optimisez votre performance. Gérez vos finances efficacement, libérant ainsi du temps pour ce qui compte vraiment.
+                
+              </p>
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Read more
+                   <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+              </a>
+          </div>
+        </div>
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+              <img class="rounded-t-lg" src="/Assets/téléchargé (1).jpg" alt="" />
+          </a>
+          <div class="p-5">
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Un Bandage de Paiement.</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Notre solution de bandage de paiement révolutionne l'acceptation des paiements. Fini les terminaux encombrants ! Notre bandage compact permet des paiements sans contact simples. Placez votre téléphone pour payer ou scannez un QR code. Parfait pour petites entreprises et événements en plein air, économique et sécurisé. Adieu les frais de location de TPE, bienvenue dans une nouvelle ère des paiements mobiles. Simplifiez vos transactions dès aujourd'hui.
+                
+              </p>
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Read more
+                   <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+              </a>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <section class="w-full h-[100vh] marketSection bg-[#070127]">
+      <div
+  id="carouselExampleCrossfade"
+  class="relative"
+  data-twe-carousel-init
+  data-twe-ride="carousel">
+  <!--Carousel indicators-->
+  <div
+    class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+    data-twe-carousel-indicators>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCrossfade"
+      data-twe-slide-to="0"
+      data-twe-carousel-active
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCrossfade"
+      data-twe-slide-to="1"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 2"></button>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCrossfade"
+      data-twe-slide-to="2"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 3"></button>
+  </div>
+
+  <!--Carousel items-->
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <!--First item-->
+    <div
+      class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item
+      data-twe-carousel-active>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+        class="block w-full"
+        alt="Wild Landscape" />
+    </div>
+    <!--Second item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+        class="block w-full"
+        alt="Camera" />
+    </div>
+    <!--Third item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item>
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+        class="block w-full"
+        alt="Exotic Fruits" />
+    </div>
+  </div>
+
+  <!--Carousel controls - prev item-->
+  <button
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-twe-target="#carouselExampleCrossfade"
+    data-twe-slide="prev">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+  <!--Carousel controls - next item-->
+  <button
+    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-twe-target="#carouselExampleCrossfade"
+    data-twe-slide="next">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Next</span
+    >
+  </button>
+</div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#070127] py-6 mt-12">
+    <div class="container mx-auto text-center text-white">
+      <p>&copy; 2024 Mycash. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">FAQ</a>
+        <a href="#" class="hover:underline">Terms and Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+
+    ScrollReveal().reveal('button', {
+      duration: 2000,     
+      origin: 'top',    
+      distance: '100px', 
+      reset: true         
+    });
+  
+    ScrollReveal().reveal('.intersection-item', {
+      duration: 2000,     
+      origin: 'bottom',   
+      distance: '50px',   
+      reset: true         
+    });
+    ScrollReveal().reveal('.logo', {
+      duration: 2000,     
+      origin: 'left',   
+      distance: '50px',   
+      reset: true         
+    });
+    ScrollReveal().reveal('.navList', {
+      duration: 2000,     
+      origin: 'right',   
+      distance: '50px',   
+      reset: true         
+    });
+    ScrollReveal().reveal('.title', {
+      duration: 2000,     
+      origin: 'left',   
+      distance: '50px',   
+      reset: true         
+    });
+    ScrollReveal().reveal('.titleImages', {
+      duration: 2000,     
+      origin: 'right',   
+      distance: '50px',   
+      reset: true         
+    });
+  </script>
+  
+</body>
+</html>
